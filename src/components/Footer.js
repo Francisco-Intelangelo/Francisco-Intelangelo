@@ -12,8 +12,8 @@ export const Footer = () => {
 const FooterContainer = styled.footer`
     display: flex;
     width: 100%;
-    height: auto;
-    background-color: #18181b;
+    height: 2.2em;
+    background-color: rgba(24, 24, 27, 1);
     justify-content: center;
     align-items: center;
 `;

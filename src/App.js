@@ -1,30 +1,22 @@
-import './App.css';
-import {library} from '@fortawesome/fontawesome-svg-core'
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import { faGithub, faLinkedin, faMedium, faStackOverflow } from '@fortawesome/free-brands-svg-icons';
-import Navbar from './components/Navbar';
-import Landing from './components/Landing';
-import styled from 'styled-components';
+import { motion } from "framer-motion";
 import { Footer } from './components/Footer';
+import { Profile } from './components/Profile';
+import { Projects } from './components/Projects';
+import { ContactMe } from './components/ContactMe';
 
 function App() {
   return (
-    <>
-        <Navbar/>
-      <SectionApp>
-        <Landing/>
-      </SectionApp>
-      <Footer/>
-    </>
+      <motion.main 
+        style={{display:'grid', gap:'3rem', maxWidth:'1400px'}}
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 2 }}
+      >
+        <Profile/>
+        <Projects/>
+        <ContactMe/>
+        <Footer/>
+      </motion.main>
   );
 }
-library.add(faEnvelope, faGithub, faLinkedin, faMedium, faStackOverflow)
 export default App;
-
-const SectionApp = styled.main`
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  background-color: #2a4365;
-  height: 90vh;
-`;
