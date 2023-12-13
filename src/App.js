@@ -6,17 +6,14 @@ import { ContactMe } from './components/ContactMe';
 
 function App() {
   return (
-      <motion.main 
-        style={{display:'grid', gap:'3rem', maxWidth:'1400px'}}
-        initial={{ opacity: 0, scale: 0.5 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 2 }}
-      >
-        <Profile/>
-        <Projects/>
-        <ContactMe/>
-        <Footer/>
-      </motion.main>
+    <>
+        <motion.main style={{display:'grid', gap:'3rem', maxWidth:'1400px'}}>
+          <Profile />
+          <Projects />
+          <ContactMe />
+          <Footer />
+        </motion.main>
+    </>
   );
 }
 export default App;

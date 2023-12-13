@@ -25,7 +25,7 @@ export const Profile = () => {
             />
             <ContainerDiv>
                 <TitleLanding>Francisco Intelangelo</TitleLanding>
-                <TxtLanding>Front-end Developer</TxtLanding>
+                <TxtLanding>Front-End Developer</TxtLanding>
                 <ContainerSocials>
                     <Anchor href="mailto: franciscointelangelo@gmail.com">
                         <Icon icon={faEnvelope}/>

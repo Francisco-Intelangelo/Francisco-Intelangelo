@@ -3,13 +3,15 @@ import { motion } from "framer-motion";
 
 export const Card = ({title, imageSrc, technologies, link}) => {
     return(
-        <motion.a style={{textDecoration: 'none'}} href={link} target="_blank" rel="noreferrer" whileHover={{ scale: 1.1, transition: { duration: 1 } }} whileTap={{ scale: 0.3}}>
+        <motion.a 
+            style={{textDecoration: 'none'}} 
+            href={link} target="_blank" rel="noreferrer" 
+            whileHover={{ scale: 1.1, transition: { duration: 1 } }} 
+            whileTap={{ scale: 1.1 }}>
         <ContainerCard>
             <ImageProject src={imageSrc} alt="image_project"/>
             <SectionTxt>
-                <TitleCard 
-                    animate={{color: '#000'}}
-                >{title}</TitleCard>
+                <TitleCard>{title}</TitleCard>
                 <TxtCard>{technologies}</TxtCard>
             </SectionTxt>
         </ContainerCard>
