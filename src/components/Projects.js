@@ -22,7 +22,7 @@ const projects = [
 ]
 export const Projects = () => {
     return(
-        <motion.article styled={{padding: '20px'}} 
+        <motion.article style={{padding: '0 20px'}} 
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 2 }}

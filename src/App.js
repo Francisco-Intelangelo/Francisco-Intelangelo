@@ -10,6 +10,7 @@ function App() {
         <motion.main style={{display:'grid', gap:'3rem', maxWidth:'1400px'}}>
           <Profile />
           <Projects />
+          <h2 style={{display:'flex', justifyContent:'center', color:'#D7D7D7'}}>In Progress...</h2>
           <ContactMe />
           <Footer />
         </motion.main>
