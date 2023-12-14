@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 export const Card = ({title, imageSrc, technologies, link}) => {
     return(
         <motion.a 
-            style={{textDecoration: 'none'}} 
+            style={{textDecoration: 'none', width:'343px'}} 
             href={link} target="_blank" rel="noreferrer" 
             whileHover={{ scale: 1.1, transition: { duration: 1 } }} 
             whileTap={{ scale: 1.1 }}>
@@ -21,13 +21,13 @@ export const Card = ({title, imageSrc, technologies, link}) => {
 const ContainerCard = styled.div`
     display: flex;
     flex-direction: column;
-    width: 20rem;
+    width: 343px;
     height: auto;
     color: auto;
     background-color: rgba(255, 255, 255, .3);
     border-radius: 15px;
+    color: rgba(215, 215, 215, 1);
     cursor: pointer;
-    color: #D7D7D7;
     gap: 1rem;
 
 `;
@@ -46,7 +46,6 @@ const SectionTxt = styled.section`
     padding: .5rem 0 .7rem .5rem;
 `;
 const TitleCard = styled.h3`
-    
     margin: 0 0 .5rem 0;
     font-size: 1rem;
 `;

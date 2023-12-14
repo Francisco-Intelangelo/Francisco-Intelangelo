@@ -5,6 +5,13 @@ import { faBriefcase } from "@fortawesome/free-solid-svg-icons"
 import { motion } from "framer-motion";
 
 const projects = [
+    {
+        id: 1,
+        title: "Nuevas Constelaciones Familiares",
+        technologies: "HTML5, CSS3, JavaScript",
+        getImageSrc: () => require("../components/images/projects/constelaciones.jpg"),
+        link: "https://constelaciones-familiares-mh.com/constelaciones-familiares/",
+    },
     {   
         id: 2,
         title: "Laboratorio de Análisis Clínicos",
@@ -13,16 +20,24 @@ const projects = [
         link: "https://analisisclinicos.netlify.app/",
     },
     {
-        id: 1,
-        title: "Nuevas Constelaciones Familiares",
-        technologies: "HTML5, CSS3, JavaScript",
-        getImageSrc: () => require("../components/images/projects/constelaciones.jpg"),
-        link: "https://constelaciones-familiares-mh.com/constelaciones-familiares/",
+        id: 3,
+        title: "Lorem ipsum dolor sit amet",
+        technologies: "Lorem ipsum dolor sit amet",
+        getImageSrc: () => require("../components/images/projects/lorem.jpg"),
+        
+    },
+    {
+        id: 4,
+        title: "Lorem ipsum ",
+        technologies: "Lorem ipsum",
+        getImageSrc: () => require("../components/images/projects/lorem.jpg"),
+        
     },
 ]
 export const Projects = () => {
     return(
-        <motion.article style={{padding: '0 20px'}} 
+        <motion.article
+            style={{width:'100%'}}
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 2 }}
@@ -43,19 +58,19 @@ export const Projects = () => {
     )
 }
 const TitleSection = styled.h2`
-    color: #D7D7D7;
-    padding: 10px 0;
+    color: rgba(215, 215, 215, 1);
 `;
 const Icon = styled(FontAwesomeIcon)`
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     padding-left: 1rem;
 `;
 const ContainerProjects = styled.section`
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 2rem;
-    @media(max-width: 690px){
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0,1fr));
+    gap: 1.5rem;
+    @media(max-width: 750px){
+        display: flex;
         flex-direction: column;
+        align-items: center;
     }
 `;
