@@ -13,7 +13,8 @@ export const AboutMe = () => {
         >
             <h2>About Me <Icon icon={faUser}/></h2>
             <TxtAbout>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                Actualmente estudiando en Coursera la certificación oficial de Meta Front-End Developer.<br/>
+                Comencé a interesarme en el desarrollo web del lado front-end durante el cursado de la tecnicatura en programación, en puestos anteriores se me ah reconosido por mi compromiso con la empresa, la autogestion, el desempeño y trabajo en equipo.
             </TxtAbout>
         </motion.section>
     )
@@ -24,5 +25,5 @@ const Icon = styled(FontAwesomeIcon)`
 `;
 const TxtAbout = styled.p`
     margin: 0;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 `;
