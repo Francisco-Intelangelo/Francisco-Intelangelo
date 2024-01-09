@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
-import avatar from "./images/avatar.jpg"
-import { faFile } from "@fortawesome/free-solid-svg-icons";
+import avatar from "./assets/avatar.jpg"
+import { faFileDownload } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
@@ -19,7 +19,7 @@ export const Profile = () => {
                 <TxtLanding>Front-End Web Developer</TxtLanding>
                 <ContainerSocials>
                     <Anchor href="./FranciscoIntelangelo.pdf" download>
-                        <Icon icon={faFile}/>
+                        <Icon icon={faFileDownload}/>
                     </Anchor>
                     <Anchor href="https://linkedin.com/in/francisco-intelangelo" target="_blank" rel="noreferrer">
                         <Icon icon={faLinkedin}/>

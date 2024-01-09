@@ -7,31 +7,24 @@ import { motion } from "framer-motion";
 const projects = [
     {
         id: 1,
-        title: "Nuevas Constelaciones Familiares",
-        technologies: "HTML5, CSS3, JavaScript",
-        getImageSrc: () => require("../components/images/projects/constelaciones.jpg"),
-        link: "https://constelaciones-familiares-mh.com/constelaciones-familiares/",
+        title: "Little Lemon Restaurant",
+        technologies: "HTML5, CSS3, JavaScript, React.JS, Figma",
+        getImageSrc: () => require("../components/assets/projects/littlelemon.jpg"),
+        link: "https://littlelemon-fi.netlify.app/",
     },
     {   
         id: 2,
         title: "Laboratorio de Análisis Clínicos",
         technologies: "HTML5, CSS3, JavaScript, React.JS",
-        getImageSrc: () => require("../components/images/projects/lab.jpg"),
+        getImageSrc: () => require("../components/assets/projects/lab.jpg"),
         link: "https://analisisclinicos.netlify.app/",
     },
     {
         id: 3,
-        title: "Lorem ipsum dolor sit amet",
-        technologies: "Lorem ipsum dolor sit amet",
-        getImageSrc: () => require("../components/images/projects/lorem.jpg"),
-        
-    },
-    {
-        id: 4,
-        title: "Lorem ipsum ",
-        technologies: "Lorem ipsum",
-        getImageSrc: () => require("../components/images/projects/lorem.jpg"),
-        
+        title: "Nuevas Constelaciones Familiares",
+        technologies: "HTML5, CSS3, JavaScript",
+        getImageSrc: () => require("../components/assets/projects/constelaciones.jpg"),
+        link: "https://constelaciones-familiares-mh.com/constelaciones-familiares/",
     },
 ]
 export const Projects = () => {
