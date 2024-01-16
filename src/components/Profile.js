@@ -18,7 +18,7 @@ export const Profile = () => {
                 <TitleLanding>Francisco Intelangelo</TitleLanding>
                 <TxtLanding>Front-End Web Developer</TxtLanding>
                 <ContainerSocials>
-                    <Anchor href="./FranciscoIntelangelo.pdf" download>
+                    <Anchor href="./Francisco-Intelangelo-Front-End.pdf" download>
                         <Icon icon={faFileDownload}/>
                     </Anchor>
                     <Anchor href="https://linkedin.com/in/francisco-intelangelo" target="_blank" rel="noreferrer">
