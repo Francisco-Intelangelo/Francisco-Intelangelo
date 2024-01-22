@@ -2,7 +2,6 @@ import styled from "styled-components"
 import { Card } from "./Card"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faBriefcase } from "@fortawesome/free-solid-svg-icons"
-import { motion } from "framer-motion";
 
 const projects = [
     {
@@ -29,12 +28,7 @@ const projects = [
 ]
 export const Projects = () => {
     return(
-        <motion.article
-            style={{width:'100%'}}
-            initial={{ opacity: 0, scale: 0.5 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 2 }}
-        >
+        <>
             <TitleSection>Projects<Icon icon={faBriefcase}/></TitleSection>
             <ContainerProjects>
                 {projects.map((project) =>(
@@ -47,7 +41,7 @@ export const Projects = () => {
                     />
                 ))}
             </ContainerProjects>
-        </motion.article>
+        </>
     )
 }
 const TitleSection = styled.h2`

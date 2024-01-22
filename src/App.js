@@ -12,7 +12,7 @@ function App() {
           <AboutMe />
           <Projects />
           <ContactMe />
-          <h2 style={{display:'flex', justifyContent:'center', color:'#D7D7D7'}}>In Progress... 👋</h2>
+          <h2 style={{display:'flex', justifyContent:'center', color:'#D7D7D7'}}>In Progress... 👋🚀</h2>
         </MainContainer>
     </>
   );
@@ -24,5 +24,4 @@ const MainContainer = styled.main`
   gap: 3.5rem;
   max-width: 710px;
   padding: 0 20px;
-  align-items: center;
 `;

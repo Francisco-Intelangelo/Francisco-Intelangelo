@@ -9,7 +9,7 @@ export const Card = ({title, imageSrc, technologies, link}) => {
             whileHover={{ scale: 1.1, transition: { duration: 1 } }} 
             whileTap={{ scale: 1.1 }}>
         <ContainerCard>
-            <ImageProject src={imageSrc} alt="image_project"/>
+            <ImageProject src={imageSrc} alt="image of project"/>
             <SectionTxt>
                 <TitleCard>{title}</TitleCard>
                 <TxtCard>{technologies}</TxtCard>

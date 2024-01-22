@@ -6,15 +6,16 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 export const Profile = () => {
-    return(
+   return(
+      <section style={{display: 'flex', alignItems:'center', justifyContent:'center', gap: '1.5rem', marginTop: '20px'}}>
         <motion.section
-            style={{display: 'flex', alignItems: 'center', gap: '1.5rem', paddingTop: '20px'}}
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 2, ease: [0, .7, .5, 1], scale: { type: "spring", damping: 5, stiffness: 90, restDelta: 0.001 } }}
+            transition={{ duration: 4, ease: [0, .7, .5, 1], scale: { type: "spring", damping: 5, stiffness: 90, restDelta: 0.001 } }}
         >
             <Img src={avatar} alt="avatar" style={{width: '150px', aspectRatio: '1036/1037', borderRadius: '50%'}}/>
-            <ContainerDiv>
+        </motion.section>
+            <ContainerSection>
                 <TitleLanding>Francisco Intelangelo</TitleLanding>
                 <TxtLanding>Front-End Web Developer</TxtLanding>
                 <ContainerSocials>
@@ -28,16 +29,16 @@ export const Profile = () => {
                         <Icon icon={faGithub}/>
                     </Anchor>
                 </ContainerSocials>
-            </ContainerDiv>
-        </motion.section>
-    )
+            </ContainerSection>
+      </section>
+   )
 }
 const Img = styled.img`
     width: 150px;
     aspect-ratio: 1036/1037;
     border-radius: 50%;
 `;
-const ContainerDiv = styled.div`
+const ContainerSection = styled.section`
     display: flex;
     flex-direction: column;
     color: rgba(215, 215, 215, 1);
